@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: url(../images/houndstooth-pattern.png)repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow:auto;
+  color: #777777;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+  font-weight: bold;
+}
+
+header{
+background-color: white;
+box-shadow: 1px 1px 10px rgb(204,200,200);
+margin-bottom: 30px;
+width: 100%;
+height: 70px;
+}
+
+/*Name*/
+#name {
+background: #4aaaa5;
+color: white;
+display: inline-block;
+padding:13px;
+font-size: 30px;
+font-weight: bolder;
+}
+
+.links {
+
+color: #777777;
+font-size: 18px;
+font-weight: bold;
+float: right;
+padding: 5px 15px;
+}
+
+#portfolio, #about {
+  border-right: .5px solid #777777
+}
+
+a:hover { 
+  background-color:lightgray;
+  color: #4aaaa5;
+}
+
+#biobox {
+  padding: 25px;
+  border: 2px solid #ccc;
+  background: white;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  position: relative;
+  margin-bottom: 20px;
+  width: 45%;
+  float: left;
+  height: 250px;
+}
+.portfolio-item:nth-of-type(even){
+  float: right;
+}
+
+.portfolio-item h4 {
+  background: #4aaaa5;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+}
+
+#port1 {
+  background: url('../images/port1.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#port2 {
+  background: url('../images/port2.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#port3 {
+  background: url('../images/port3.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#port4 {
+  background: url('../images/port4.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#port5 {
+  background: url('../images/port5.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #666;
+  border-top: 5px solid #4aaaa5;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  margin-top: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: all;
+}
+
