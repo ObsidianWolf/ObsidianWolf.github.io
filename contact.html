@@ -10,13 +10,15 @@
 <body>
     <header>
         <div id="name">Patrick Dumay</div>
-        <a class="links" id="contact" href="contact.html">Contact</a>
-        <a class="links" id="portfolio" href="portfolio.html">Portfolio</a>
-        <a class="links" id="about" href="index.html">About</a>
+        <div id="mynav">
+            <a class="links" id="contact" href="contact.html">Contact</a>
+            <a class="links" id="portfolio" href="portfolio.html">Portfolio</a>
+            <a class="links" id="about" href="index.html">About</a>
+        </div>
     </header>
     
 
-    <div id="biobox">
+    <div id="biobox" class="clearfix">
 
         <h2>Contact</h2>
 
@@ -27,11 +29,11 @@
 
             <form>
                 Name:<br>
-                <input type="text" name="name" id="form-name" placeholder="Enter name">
+                <input type="text" name="name" class="long" id="form-name" placeholder="Enter name">
                 <br>
 
                 Email:<br>
-                <input type="email" name="email" id="form-email" placeholder="Enter email">
+                <input type="email" name="email" class="long" id="form-email" placeholder="Enter email">
                 <br>
 
                 Message:<br>

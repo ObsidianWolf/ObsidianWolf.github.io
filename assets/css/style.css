@@ -1,4 +1,4 @@
-*{
+ *{
   box-sizing: border-box;
 }
 
@@ -21,9 +21,15 @@ box-shadow: 1px 1px 10px rgb(204,200,200);
 margin-bottom: 30px;
 width: 100%;
 height: 70px;
+padding: 0 15%;
 }
 
-/*Name*/
+#mynav{
+  display: inline;
+}
+
+
+
 #name {
 background: #4aaaa5;
 color: white;
@@ -34,7 +40,7 @@ font-weight: bolder;
 }
 
 .links {
-
+margin: 15px 0;
 color: #777777;
 font-size: 18px;
 font-weight: bold;
@@ -42,9 +48,14 @@ float: right;
 padding: 5px 15px;
 }
 
-#portfolio, #about {
-  border-right: .5px solid #777777
+#mynav a {
+  border-left: 1px solid #777777;
 }
+
+#mynav a:last-child {
+  border: 0;
+}
+
 
 a:hover { 
   background-color:lightgray;
@@ -56,7 +67,14 @@ a:hover {
   border: 2px solid #ccc;
   background: white;
   width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
+}
+
+.inline-img{
+  margin-right: 20px;
+  height: 200px; 
+  width: 200px;
+  float: left;
 }
 
 .portfolio-item {
@@ -122,9 +140,123 @@ footer {
   width: 100%;
 }
 
+
 .clearfix::after {
   content: "";
   display: block;
   clear: all;
+} 
+
+@media only screen and (max-width: 980px) {
+  
+  body{
+    background: url(../images/houndstooth-pattern.png)repeat;
+    font-family: 'Lora', serif;
+    overflow:auto;
+    color: #777777;
+  }
+  
+  
+  #biobox {
+    padding: 25px;
+    border: 2px solid #ccc;
+    background: white;
+    width: 745px;
+    margin: 0 auto 100px;
+    margin-left: 4%;
+  }
+
+  header{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(204,200,200);
+    margin-bottom: 30px;
+    width: 105%;
+    height: 70px;
+    padding: 0 4%;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: all;
+    } 
+
 }
 
+
+@media only screen and (max-width: 768px) {
+
+  body{
+    background: url(../images/houndstooth-pattern.png)repeat;
+    font-family: 'Black And White Picture', sans-serif;
+    overflow:auto;
+    color: #777777;
+  }
+
+  header{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(204,200,200);
+    margin-bottom: 30px;
+    width: 100%;
+    height: 70px;
+    padding: 0 7%;
+    }
+    
+
+    #biobox {
+      padding: 2%;
+      border: 2px solid #ccc;
+      background: white;
+      width: 87%;
+      margin: 0 auto 100px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: all;
+    } 
+  
+}
+
+@media only screen and (max-width: 640px) {
+
+  body{
+    background: url(../images/houndstooth-pattern.png)repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow:auto;
+    color: #777777;
+  }
+
+  header{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(204,200,200);
+    margin-bottom: 30px;
+    width: 100%;
+    height: 70px;
+    }
+
+    #name {
+      background: #4aaaa5;
+      color: white;
+      padding:13px;
+      font-size: 30px;
+      font-weight: bolder;
+      text-align: center;
+      }
+
+    #biobox {
+      padding: 25px;
+      border: 2px solid #ccc;
+      background: white;
+      width: 960px;
+      margin: 0 auto 100px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: all;
+    } 
+
+}
